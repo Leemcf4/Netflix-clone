@@ -1,0 +1,152 @@
+.nav {
+  height: 30px;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  position: fixed;
+  left: 0;
+  top: 12px;
+  width: 80px;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.nav__black {
+  background-color: #111;
+}
+
+.nav__avatar {
+  position: fixed;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.nav__list {
+  position: fixed;
+  right: 60px;
+  width: 70px;
+  top: 25px;
+  height: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.6ms ease-in-out;
+}
+.nav__list:hover {
+  color: white;
+}
+.nav__search {
+  position: fixed;
+  top: 45px;
+  right: 150px;
+}
+
+@media only screen and (min-width: 840px) {
+  .nav__search {
+    position: fixed;
+
+    right: 200px;
+    flex: 1;
+  }
+}
+
+.nav__search__input {
+  position: fixed;
+  right: 150px;
+  top: 0;
+  max-width: 50px;
+
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.5rem;
+  background: rgba(17, 17, 17, 0.356);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 0.5px solid #fff;
+  border-bottom-width: thin;
+}
+
+.nav__search__input:focus {
+  outline-width: 0;
+}
+
+@media only screen and (min-width: 840px) {
+  .nav__search__input {
+    width: 400px;
+    min-width: 400px;
+
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-bottom: 0.5px solid #fff;
+    border-bottom-width: thin;
+  }
+}
+
+.result__box {
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 840px) {
+  .result__box {
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    cursor: pointer;
+    background-color: #111;
+    color: #fff;
+    width: 400px;
+  }
+}
+
+.result__box:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+.result__box > img {
+  object-fit: contain;
+  height: 50px;
+}
+
+.result__info {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
